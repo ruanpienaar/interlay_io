@@ -5,7 +5,11 @@
   {registered, []},
   {applications, [
                   kernel,
-                  stdlib
+                  stdlib,
+                  cowlib,
+                  eda,
+                  gun,
+                  ranch
                  ]},
   {mod, { interlay_io_app, []}},
   {env, []}

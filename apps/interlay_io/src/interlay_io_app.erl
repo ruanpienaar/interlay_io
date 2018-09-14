@@ -12,6 +12,7 @@
 %% ===================================================================
 
 start(_StartType, _StartArgs) ->
+    true = net_kernel:connect('il_work@localhost'),
     interlay_io_sup:start_link().
 
 stop(_State) ->
