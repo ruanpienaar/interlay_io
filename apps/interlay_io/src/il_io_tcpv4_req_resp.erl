@@ -6,7 +6,7 @@
 
 recv_data(Pid, _SocketOpts, Data) ->
     % timer:sleep(1000),
-    io:format("recv_data Pid: ~p, Data: ~p~n", [Pid, Data]),
+    % io:format("recv_data Pid: ~p, Data: ~p~n", [Pid, Data]),
     % Queue Job
     {ok, WordNode} = application:get_env(interlay_io, work_node),
     %% TODO: rpc can be used, but we can also use nimby ....
